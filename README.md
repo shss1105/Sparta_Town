@@ -28,3 +28,8 @@
 [캐릭터 선택 시스템]
 
 - PopupStartMenu.cs, GameManager.cs
+
+## ✏ 추가 기능
+[시간 표시]
+
+- UIManager.cs
