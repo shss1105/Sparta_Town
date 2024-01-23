@@ -33,3 +33,7 @@
 [시간 표시]
 
 - UIManager.cs
+
+[인게임 이름 변경]
+
+- IngameMenu.cs
