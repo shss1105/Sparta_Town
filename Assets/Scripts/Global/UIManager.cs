@@ -6,12 +6,17 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    public static UIManager Instance;
+    
     [SerializeField] Text time;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
     }
 
     // Update is called once per frame
@@ -19,4 +24,5 @@ public class UIManager : MonoBehaviour
     {
         time.text = DateTime.Now.ToString("HH : mm");
     }
+
 }

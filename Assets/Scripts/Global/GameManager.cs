@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
 
     public Animator playerAnimator;
     public Text playerName;
+    public Text changedName;
 
     public List<Character> characterList = new List<Character>();
 
@@ -41,5 +42,10 @@ public class GameManager : MonoBehaviour
         var character = GameManager.Instance.characterList.Find(item => item.Charactertype == characterType);
         playerAnimator.runtimeAnimatorController = character.AnimationController;
         playerName.text = name;
+    }
+    
+    public void ChangeName(string changedname)
+    {
+        playerName.text = changedname;
     }
 }
